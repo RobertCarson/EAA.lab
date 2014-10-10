@@ -6,8 +6,7 @@
 # Description : 
 # Options : 
 
-#use printf to write a user friendly
-#message
+printf "The number of processors is"
 
 grep processor /proc/cpuinfo | wc -l
 
