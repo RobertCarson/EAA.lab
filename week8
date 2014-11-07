@@ -1,0 +1,54 @@
+Basic Data Analysis
+
+1. Analysis
+
+Tools for analysis are based on the underlying data structure and content
+
+open and review the data file to observe structure and content
+
+extract data file to C:\\student
+
+2. nucl.dat
+
+% or fraction of nuclear stations among a group of 12 countries
+
+no time axis
+
+this is not trend data 
+
+Q. Avg # 
+   Total #
+   Country with most   
+   Country with least
+   
+3. Average:
+
+use mean function to calculate the average 
+
+nucl$V2 = display figures for that particular column only
+
+Why was the mean and median different? Sample set was draw from countries with hugely different sizes. energy needs are larger in US than south Korea.
+
+mean = 35, median = 22.5, min = 9, max = 119, total = 427.
+
+display with pie chart: label and colour
+
+slices <- nucl$(V2)
+lbls <- nucl$(V1)
+pie(slices, labels = lbls,col=rainbow(length(lbls)) main="Pie Chart of Countries with Nuclear Power Stations")
+
+Task: Source some fractional data with labels and 15 rows of data
+
+plot using pie
+
+obtain summary stats
+
+Bar Plot:  
+
+4. SIRD.dat
+
+This is the weight in KG's of 50 babies born in some hospital, no labels, no groups and no fractions or percentages here
+This has floating point data elements, contains continuous data, not discrete data elements.
+No time element, therefore no trend data 
+
+birth <- scan('SIRD.data')
